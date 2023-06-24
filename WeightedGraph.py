@@ -6,10 +6,10 @@ class WeightedGraph:
         self.edges = {}
     
     def getNodes(self):
-        return self.nodes.keys()
+        return list(self.nodes.keys())
     
     def getEdges(self):
-        return self.edges.keys()
+        return list(self.edges.keys())
     
     def addNode(self, nodeId, data):
         self.nodes[nodeId] = data
